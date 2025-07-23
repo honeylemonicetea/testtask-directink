@@ -12,26 +12,55 @@
     </a>
     <nav class="nav">
       <div class="container nav__container">
-        <a href="" class="nav__logo"
+        <a href="#" class="nav__logo"
           ><img src="./img/icons/logo.svg" alt=""
         /></a>
-        <a href="" class="nav__link">Home</a>
+        <a href="#" class="nav__link">Home</a>
         <div class="nav__about-wrapper">
-          <p href="" class="nav__link about-link">
+          <p class="nav__link about-link">
             About Us <img src="./img/icons/down-arrow.svg" alt="" />
           </p>
           <div class="nav__about-content">
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
+            <a href="#about" class="nav__link">What We Do</a>
+            <a href="#team" class="nav__link">Team</a>
+            <a href="#" class="nav__link">Link 3</a>
           </div>
         </div>
-        <a href="" class="nav__link">Portfolio</a>
-        <a href="" class="nav__link">Management Profile</a>
-        <a href="" class="nav__link">Careers</a>
-        <a href="" class="nav__button button_green">Contact Us</a>
+        <a href="#" class="nav__link">Portfolio</a>
+        <a href="#" class="nav__link">Management Profile</a>
+        <a href="#" class="nav__link">Careers</a>
+        <a href="#contacts" class="nav__button button_green">Contact Us</a>
       </div>
     </nav>
+    <!-- burger menu -->
+    <nav class="nav__burger">
+      <div class="nav__burger-top">
+        <a href="#" class="nav__logo">
+          <img src="./img/icons/logo.svg" alt="" />
+        </a>
+        <button class="nav__burger-button">
+          <div class="nav__burger-middle"></div>
+        </button>
+      </div>
+      <div class="nav__burger-container">
+        <a href="#" class="nav__link">Home</a>
+        <details>
+          <summary class="nav__link">
+            About Us <img src="./img/icons/down-arrow.svg" alt="" />
+          </summary>
+          <div class="nav__details-content">
+            <a href="#about" class="nav__link">What We Do</a>
+            <a href="#team" class="nav__link">Team</a>
+            <a href="#" class="nav__link">Link 3</a>
+          </div>
+        </details>
+        <a href="#" class="nav__link">Portfolio</a>
+        <a href="#" class="nav__link">Management Profile</a>
+        <a href="#" class="nav__link">Careers</a>
+        <a href="#contacts" class="nav__link">Contact Us</a>
+      </div>
+    </nav>
+
     <header class="header">
       <div class="header__overlay">
         <div class="header__overlay-bottom"></div>
@@ -43,12 +72,12 @@
             Solution for your Business
           </h1>
           <p>Grow your business with our state of the art technology</p>
-          <a href="" class="header__button button_green">Learn more</a>
+          <a href="#" class="header__button button_green">Learn more</a>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="about">
+      <section class="about" id="about">
         <div class="container about__container">
           <div class="about__left">
             <h3>
@@ -76,14 +105,14 @@
                 <p class="about__card-title">
                   Identity Management & Verification
                 </p>
-                <p>
+                <p class="about__card-text">
                   Our Identity Management solution is the authentication process
                   of determining whether a person is who he or she claims to be.
                 </p>
               </div>
               <div class="about__card">
                 <p class="about__card-title">UI/UX Design</p>
-                <p>
+                <p class="about__card-text">
                   Our team of trusted Web Designers help businesses create
                   effective online presence that support their growth.
                 </p>
@@ -92,7 +121,7 @@
             <div class="about__col2">
               <div class="about__card">
                 <p class="about__card-title">Software Development</p>
-                <p>
+                <p class="about__card-text">
                   Our Team Design and Develop Web-based and mobile applications
                   for different sectors of the economy.
                 </p>
@@ -101,7 +130,7 @@
                 <p class="about__card-title">
                   IT Consulting & Advisory Services
                 </p>
-                <p>
+                <p class="about__card-text">
                   We offer IT consultancy to companies in the area of Business
                   Intelligence (BI) and Enterprise Resource Planning (ERP).
                 </p>
@@ -110,10 +139,11 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <h3>
-            <span class="circle"></span> PROFESSIONAL PEOPLE
+            <span class="circle"></span>
+            <span class="team__category">PROFESSIONAL PEOPLE</span>
             <span class="circle"></span>
           </h3>
           <h2 class="team__title">Our Leadership Team</h2>
@@ -130,6 +160,7 @@
                   class="team__add-button"
                   src="./img/icons/add-button.svg"
                   alt=""
+                  title="Add"
                 />
               </div>
             </div>
@@ -141,6 +172,7 @@
                   class="team__add-button"
                   src="./img/icons/add-button.svg"
                   alt=""
+                  title="Add"
                 />
               </div>
             </div>
@@ -152,6 +184,7 @@
                   class="team__add-button"
                   src="./img/icons/add-button.svg"
                   alt=""
+                  title="Add"
                 />
               </div>
             </div>
@@ -163,6 +196,7 @@
                   class="team__add-button"
                   src="./img/icons/add-button.svg"
                   alt=""
+                  title="Add"
                 />
               </div>
             </div>
@@ -171,7 +205,7 @@
               <div class="team__modal-content">
                 <div class="team__modal-header">
                   <p>Modal Header</p>
-                  <button>&times;</button>
+                  <button class="team__modal-close">&times;</button>
                 </div>
                 <div class="team__modal-body">
                   <p class="team__modal-message"></p>
@@ -182,42 +216,53 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer__container">
         <div class="footer__left">
           <h3>About Us</h3>
           <div class="footer__social-icons">
-            <a href=""><img src="./img/icons/twitter.svg" alt="" /></a>
-            <a href=""><img src="./img/icons/fb.svg" alt="" /></a>
-            <a href=""><img src="./img/icons/inst.svg" alt="" /></a>
-            <a href=""><img src="./img/icons/linked.svg" alt="" /></a>
+            <a href="#"><img src="./img/icons/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./img/icons/fb.svg" alt="" /></a>
+            <a href="#"><img src="./img/icons/inst.svg" alt="" /></a>
+            <a href="#"><img src="./img/icons/linked.svg" alt="" /></a>
           </div>
         </div>
         <div class="footer__right">
           <div class="footer__col">
             <h3>Contact Us</h3>
-            <p><span>Addresss</span> Global Plaza, Jabi. Abuja. Nigeria</p>
-            <p><span>Phone</span></p>
-            <p><span>Email</span>:spatiuminnovation@gmail.com</p>
+            <p>
+              <span class="footer__text_green">Addresss</span> Global Plaza,
+              Jabi. Abuja. Nigeria
+            </p>
+            <p><span class="footer__text_green">Phone</span></p>
+            <p>
+              <span class="footer__text_green">Email</span>:
+              <a href="mailto:spatiuminnovation@gmail.com"
+                >spatiuminnovation@gmail.com</a
+              >
+            </p>
           </div>
           <div class="footer__col">
             <h3>Serivces</h3>
-            <a href="">Software Development</a>
-            <a href="">Identity Management & Verification</a>
-            <a href="">IT Consulting & Advisory Services</a>
-            <a href="">UI/UX Design</a>
+            <a href="#">Software Development</a>
+            <a href="#">Identity Management & Verification</a>
+            <a href="#">IT Consulting & Advisory Services</a>
+            <a href="#">UI/UX Design</a>
           </div>
           <div class="footer__col">
             <h3>Quicklinks</h3>
-            <a href="">Careers</a>
-            <a href="">Resources</a>
-            <a href="">Products</a>
-            <a href="">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Resources</a>
+            <a href="#">Products</a>
+            <a href="#">Blog</a>
           </div>
         </div>
       </div>
       <div class="footer__copyright">
-        <p>Copyright 2020. Spatium Innovation Hub. All Rights Reserved</p>
+        <p>
+          Copyright <span class="footer__copyright-year"></span>. Spatium
+          Innovation Hub. All Rights Reserved
+        </p>
       </div>
     </footer>
     <script src="script.js"></script>
