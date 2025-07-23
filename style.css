@@ -532,7 +532,9 @@ a {
   .team__add-button {
     right: 15px;
   }
-
+  .team__card-text{
+    padding: 5px;
+  }
   .up-button {
     right: 30px;
     bottom: 30px;
