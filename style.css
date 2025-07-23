@@ -500,7 +500,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   html {
     font-size: 16px;
   }
@@ -513,6 +513,7 @@ a {
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+    left: 0;
   }
 
   .about__container {
