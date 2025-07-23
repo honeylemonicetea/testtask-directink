@@ -653,6 +653,7 @@ a {
 
   .header__content {
     padding: 10px;
+    left: 0;
   }
 
   .about__paragraph2 {
