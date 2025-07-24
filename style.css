@@ -281,7 +281,7 @@ a {
 .team {
   min-height: 100vh;
   text-align: center;
-  padding-top: 104px;
+  padding: 104px 0;
 }
 
 .team__category {
